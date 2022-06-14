@@ -243,14 +243,18 @@ h2.oursv {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
+.card:hover{
+  background-color: green;
+  color: #ffffff;
+}
 h3.srv {
   font-size: 20px;
   font-weight: 600;
-  color: #1f194c;
+  /* color: #1f194c; */
   margin: 1em 0;
 }
 p.srv {
-  color: #575a7b;
+  
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -268,19 +272,19 @@ p.srv {
   place-items: center;
   transition: 0.5s;
 }
-.card:hover{
+/* .card:hover{
   background-position: 0 100%;
 }
 .card:hover .icone-wrapper{
   background-color: #ffffff;
   color: rgba(207, 119, 42, 0.921);
-}
-.card:hover h3.srv{
+} */
+/* .card:hover h3.srv{
   color: rgba(207, 119, 42, 0.921);
-}
-.card:hover p.srv{
+} */
+/* .card:hover p.srv{
   color: rgba(207, 119, 42, 0.921);
-}
+} */
 
 @media screen and (min-width: 768px) {
   section{
