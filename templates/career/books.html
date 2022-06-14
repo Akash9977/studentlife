@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% comment %} {% load crispy_forms_tags %}  {% endcomment %}
+{%load static%}
+
+{%block body %}
+<di class="bookall">
+    <div style="background-image: url('{% static "img/bg.jpg" %}'); backgroun-repeat:no-repeat"></div>
+    <div class="Book">
+        <h2 class="onlinebook">Online Book Reading Website</h2>
+        <a herf ="https://openlibrary.org/https://openlibrary.org/"><h4 class="Library">1.Open Library</h4></a>
+        <a herf ="https://books.google.com.bd/books?id=35LvAAAAMAAJ&q=the+last+three+minutes&dq=the+last+three+minutes&hl=en&sa=X&redir_esc=y"><h4 class="Library">2.Google Books</h4></a>
+    </div>
+</div>
+{%endblock%}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% comment %} {% load crispy_forms_tags %} {% endcomment %}
+
+{%load static%}
+
+{%block body %}
+<div class="aboutall">
+  <div class="about">
+      <div class="main">
+
+        <h1 class="abouttext">About Us</h1> <br>
+        <h2 class="Details">Everything on a student's life can be found on this website. There are many types of coaches. 
+          This website has teacher's arrangements. There are job opportunities for students.
+          There are education systems in different countries of the world. There are arrangements. 
+          There are arrangements for computer students in Programming, Python Web Design & Development, Graphics Design, etc.
+          There are many benefits to studying for children. 
+          There are many more benefits.</h2>
+          <h2 class="Details">Our vision is to provide high quality, effective and accessible fully online education system to support all those who need it, from online tutoring for kids to helping university-level students. This can be done only by employing the very latest tools and technologies in education. Student Life is committed to pursuing that vision.</h2>
+      </div>
+
+  </div>
+  <div class="Design">
+    <h1 class="abouttext">About Me</h1> <br>
+    <br>
+    <img src="{% static "img/Me.jpg" %}" class="me " alt="...">
+    <h4 class="name">Introduction</h4>
+          <p class="pa">I'm  Akash Pal Front-end and Back-end web Developer, Computer Science Student. I am working on web development for more than 1.5 years and in this period I learn a lot of new stuff about Front-end and back-end development etc and build an End to End Projects and I work in Graphics Design.I also make the website more & more interactive with web animations.</p>
+      </div>
+      <div class="abouticon">
+          <a href="https://www.facebook.com/aakashkumar.akp/" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+  </div>
+  {% comment %} <button class="cont-me">
+    <span class="text">Contract Me</span>
+    <i class="icon fas fa-share-alt"</i>
+    <div class="sm-btns">
+      <a href="https://www.facebook.com/aakashkumar.akp/"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fa-solid fa-at"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"> <i class="fab fa-github"></i></a>
+    </div>
+  </button> {% endcomment %}
+
+
+
+  <br>
+</div>
+{%endblock%}

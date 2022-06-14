@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{%load static%}
+
+{%block body %}
+
+<div style="background-image: url('{% static "img/cnt4.jpg" %}'); backgroun-repeat:no-repeat">
+    
+    <br>
+    <div class="contact">
+        <h2>CONTACT INFORMATION</h2>
+        <h5>We’d Love To Help You</h5>
+        <p>Please feel free to get in touch using the form below. We'd love to hear your
+        thoughts & answer any questions you may have!</p>
+
+
+    </div>
+    <br>
+
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="wrapper">
+                <div class="row mb-5">
+                    <div class="col-md-3">
+                        <div class="dbox w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa-solid fa-location-dot"></span>
+                    </div>
+                    <div class="text">
+                    <p><span>Address:</span>192/2 East Kazipara Mirpur Dhaka-1216</p>
+                  </div>
+              </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dbox w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-phone"></span>
+                    </div>
+                    <div class="text">
+                    <p><span>Phone:</span> <a href="tel://1768043788">+880 1768043788</a></p>
+                    <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                  </div>
+              </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dbox w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-paper-plane"></span>
+                    </div>
+                    <div class="text">
+                    <p><span>Email:</span> <a href="mailto:akploveboy@gmail.com">akploveboy@gmail.com</a></p>
+                  </div>
+              </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dbox w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-globe"></span>
+                    </div>
+                    <div class="text">
+                    <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                  </div>
+              </div>
+                    </div>
+
+        <div class="form">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-8"> 
+                        {{ form.Name |as_crispy_field }}
+                        {{ form.Email |as_crispy_field }}
+                        {{ form.YourMessage |as_crispy_field }}
+                    </div>
+                    <div class="col-md-4 m">
+                        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8856393451238!2d90.37664211445586!3d23.751457194654012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b92533c3528f%3A0xe6b8c0e0676b8089!2sDaffodil%20International%20Professional%20Training%20Institute%20(DIPTI).!5e0!3m2!1sen!2sbd!4v1649012855226!5m2!1sen!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                    
+                    </div>
+                </div>   
+                <button class="btn btn-info mt-4">Send Your Message</button>
+            </form>
+    </div>
+
+</div>
+{%endblock%}

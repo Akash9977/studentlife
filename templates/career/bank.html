@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{%block body %}
+<div class="bankall">
+    <img src="{% static "img/sb3.jpg" %}" class="d-block w-100" alt="...">
+    <br>
+    <button type="button" class="collapsible">What is a student account?</button>
+    <div class="contentbank">
+    <p>A student bank account is designed just for university students. They are usually based on standard current accounts offered by banks. However, students are also treated to benefits including freebies and interest-free overdrafts.
+    <br>
+    You will need to prove your student status when opening your account. something we'll come to later in the guide.</p>
+    </div><br>
+    <button type="button" class="collapsible">Student bank account reviews?</button>
+    <div class="contentbank">
+    <p>All students can get £1,000 upon opening an account which can rise to £3,000 in your third year making it one of the largest student account overdrafts on offer.</p>
+    </div><br>
+    <button type="button" class="collapsible">Why do banks love students?</button>
+    <div class="contentbank">
+    <p>Banks are actively targeting students with big incentives for good reason.
+    Students are essentially investing in themselves to (hopefully) get a higher than average salary when they graduate.
+     Whilst you may be borrowing now to fund your education, banks expect you to reap the rewards so they’re ‘banking’ on you to become a valuable long-term customer.</p>
+    </div><br>
+    <button type="button" class="collapsible">Which bank is best for student?</button>
+    <div class="contentbank">
+    <p>Best Banks for Students in World<em> <br>
+        EBL Bank  Account.<br>
+        ICIC Bank Campus Account.<br>
+        PNB Student Savings Account.<br>
+        Steps to Open Punjab National Bank Savings Account.<br>
+        HDFC Zero Balance Account.<br>
+        HDFC DigiSave Youth Account.<br>
+        SBI Zero Balance Savings Accounts.<br>
+    </div><br>
+    <button type="button" class="collapsible">Can I open student bank account online?</button>
+    <div class="contentbank">
+    <p>Can I open student bank account online?
+        The SBI Student Bank Account can be applied either by offline or via online or with the help of your college.</p>
+    </div><br>
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var contentbank = this.nextElementSibling;
+            if (contentbank.style.maxHeight){
+                contentbank.style.maxHeight = null;
+            } else {
+                contentbank.style.maxHeight = contentbank.scrollHeight + "px";
+            } 
+        });
+        }
+    </script>
+    <br>
+</div>
+{%endblock%}

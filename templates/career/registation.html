@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{%load static%}
+
+{%block body %}
+<div style="background-image: url('{% static "img/rg5.jpg" %}'); backgroun-repeat:no-repeat">
+
+    <div class="sign">
+        Sign Up 
+        <br>
+        It's quick and easy.
+    </div>  
+    <div class="form">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.Name |as_crispy_field }}
+            {{ form.Email |as_crispy_field }}
+            <div class="row">
+                <div class="col-md-8"> 
+                    {{ form.Cell |as_crispy_field }}
+                    {{ form.Gender |as_crispy_field }}
+                </div>
+                <div class="col-md-4">
+                    {{ form.Department|as_crispy_field }}
+                    {{ form.Picture|as_crispy_field }}
+                </div>
+            </div>
+            <button type='Submit' class="btn btn-success mt-4">Submit</button>
+        </form>
+
+        {% comment %} <form  method="POST">
+            {{form |crispy}}
+            {% csrf_token %}
+            <button type="submit" class="btn btn-success btn-sm" >Submit</button>
+        </form>  {% endcomment %}
+    </div>
+
+
+{%endblock%}

@@ -1,0 +1,279 @@
+{% extends 'base.html' %}
+{% comment %} {% load crispy_forms_tags %} {% endcomment %}
+
+{%load static%}
+
+{%block body %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<img src="{% static "img/in3.jpg" %}" class="d-block w-100" alt="...">
+
+<div class="body">
+    {% comment %} <div style="background-image: url('{% static "img/in.jpg" %}'); backgroun-repeat:no-repeat"> {% endcomment %}
+
+    {% comment %} <div class="backgroun">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static "img/bg-1.png" %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            <h5 class="h51">Children Student Life</h5>
+            <p style="color:forestgreen;">Your future will completely depend on how you are passing your student life. If you can use the time properly, then you will have a good future ahead.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static "img/bg-4.jpg" %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            <h5 class="h51">Student Life</h5>
+            <p style="color:forestgreen;">Student life is seedtime of our life to do something good in the future. At this time every one get the education and preparation for their near future.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static "img/bg-3.jpg" %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            <h5 class="h51">Student Life</h5>
+            <p style="color:forestgreen;">Student life is the seedtime for the future. Whatever we do at that time, we will get the result in the future.</p>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>{% endcomment %}
+    <div class="contentstu">
+        <h1 class="h1"><b>Student Life</b></h1>
+        <h6 class="h6">The student life is the period of life we spend in educational institutions in acquiring knowledge. It is the time for having prepared for struggle in later life. It is called the seedtime of human life, as our achievements in life depend on our performance in our student life. </h6>
+        <h6 class="h6"> Students are the future leaders of a nation. After equipping themselves fully with education, they need to come forward to serving the nation for the betterment. To this end it is imperative that they get a clear idea about the society and the social problems.</h6>
+    </div> 
+ {% comment %} ###########################Courses########################## {% endcomment %}
+ <br>
+
+
+    <section>
+        <div class="row">
+            <h2 class="oursv"><b>Our Popular found Courses</b></h2>
+            <h5 class="h55">provide readers with a brief, general description of the subject matter covered in the course.</h5>
+        </div>
+        <div class="con">
+            <div class="column">
+                <div class="card">
+                    <div class="icone-wrapper">
+                        <i class="fa-solid fa-computer"></i>
+                    </div>
+                    <h3 class="srv">IT Managemant </h3>
+                    <p class="srv">The Management of all information technology resources of a company, according to its needs and priorities.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icone-wrapper">
+                        <i class="fa-solid fa-business-time"></i>
+                    </div>
+                    <h3 class="srv">Business Managemant </h3>
+                    <p class="srv">Business marketing is a marketing practice of individuals or organizations your customer needs and how your business will satisfy them.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icone-wrapper">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="srv">Art & Design </h3>
+                    <p class="srv">Art & Design degree includes concept creation, practical art or design skills and the implementation of industry-changing designs.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icone-wrapper">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="srv">Marketing  Management</h3>
+                    <p class="srv" >The organizational discipline which focuses on the practical application of marketing orientation, techniques and methods inside.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icone-wrapper">
+                        <i class="fa-solid fa-person-skiing"></i>
+                        {% comment %} <i class="fa-solid fa-person-dots-from-line"></i> {% endcomment %}
+                    </div>
+                    <h3 class="srv">Health & Fitness </h3>
+                    <p class="srv">Walking, lifting weights, doing chores – it's all good. Regardless of what you do, regular exercise and physical activity.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icone-wrapper">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <h3 class="srv">Music Learning</h3>
+                    <p class="srv">Practice playing notes, chords, and scales on your instrument. After you've mastered the concepts of notes, chords, and scales</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icone-wrapper">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <h3 class="srv">Language Learning</h3>
+                    <p class="srv">Language learning is an active process that begins at birth and continues throughout life. Students learn language as they use.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icone-wrapper">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="srv">Finance and Banking</h3>
+                    <p class="srv">Finance encompasses banking, leverage or debt, credit, capital markets, money, investments, and the creation and oversight.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icone-wrapper">
+                        <i class="fa-solid fa-children"></i>
+                    </div>
+                    <h3 class="srv">Kids Study</h3>
+                    <p class="srv">Starting sorting shapes and colors. Complete sentences and rhymes in familiar books. Play simple make-believe games.</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+
+ {% comment %} ###########################Teachers########################## {% endcomment %}
+    <section class="our-webcoderskull padding-lg">
+        <div class="container">
+            <div class="teacher">
+                <h1 class="tec"><b>Meet Our Teachers</b></h1>
+                <h5 class="h55">The teacher determines and shapes the character, ability, and future Student.</h5>
+            </div>  
+        <ul class="row">
+            <li class="col-12 col-md-6 col-lg-3">
+                <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="{% static "img/tec-1.jpg" %}" class="img-responsive" alt=""></figure>
+                <h3><a href="#">Muhammad Emran Hossain</a></h3>
+                <p>Lecturer (Computer Technology)</p>
+                <ul class="follow-us clearfix">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+                <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="{% static "img/tec-2.jpg" %}" class="img-responsive" alt=""></figure>
+                <h3><a href="#">Bashir Uddin</a></h3>
+                <p>Instructor (Computer Technology)</p>
+                <ul class="follow-us clearfix">
+                    <li><a href="https://www.facebook.com/media/set/?set=a.1384978858429827&type=3"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+                <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="{% static "img/tec-3.jpg" %}" class="img-responsive" alt=""></figure>
+                <h3><a href="#">Bedhan Chandra Mitra</a></h3>
+                <p>Lecturer (Electrical Engineering) </p>
+                <ul class="follow-us clearfix">
+                    <li><a href="https://www.facebook.com/sir.bedhan"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+                <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="{% static "img/tec-4.jpg" %}" class="img-responsive" alt=""></figure>
+                <h3><a href="#">Sapan Mondol</a></h3>
+                <p>SQA Engineer</p>
+                <ul class="follow-us clearfix">
+                    <li><a href="https://www.facebook.com/sapankumer.mondol"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                </div>
+            </li>
+        </ul>
+        </div>
+    </section>
+                            {% comment %} Teachers {% endcomment %}
+
+    
+    <section class="im">
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="bannar"> 
+                    <div class="im1">
+                        <img src="{% static "img/banner-img-1.png" %}" class="im1 d-block w-100" alt="..."><br>
+                        <span class="Free">Free</span>
+                        <h3 class="Free">World Top University Foundation Document</h3>
+                        <a href="https://cpl.hks.harvard.edu/files/cpl/files/global_philanthropy_report_final_april_2018.pdf"><button class="btnf btn1f">View Document</button></a>
+                        
+                    <br>
+                    </div>
+                </div>
+                                    
+            </div>
+            <div class="col-md-6">
+                <div class="bannar">
+                    <span class="Free1">New</span>
+                    <h3 class="Free1">Online Courses From World Top University</h3>
+                    <a href="https://www.topuniversities.com/student-info/distance-learning/9-top-universities-offering-free-online-courses"><button class="btnf btn1f">Find Out More</button></a> 
+                    <br>
+                    <div class="im2"><br>
+                        <img src="{% static "img/banner-img-2.png" %}" class="im2 d-block w-100" alt="...">
+                    </div>
+                </div>          
+        </div>
+    </section>
+    <br>
+    <div class="child">
+        <img src="{% static "img/choose1.png" %}" class="child" alt="">
+
+        <div class="child-txt">
+            <h2 class="child">Inspiring Today's Children To <br>Succeed In Tomorrow's World.</h2>
+            <h6 class="child"><i class=" fa-solid fa-circle-chevron-right"></i> Online learning is as easy and natural as chatting with a group of friends.</h6>
+            <h6 class="child2"><i class=" fa-solid fa-circle-chevron-right"></i> online learning solutions for secondary education, from structured content to courses fully taught.</h6>
+            <h6 class="child3"><i class=" fa-solid fa-circle-chevron-right"></i> Help kids put homework and books in their backpacks the night before.</h6>
+            <h6 class="child4"><i class=" fa-solid fa-circle-chevron-right"></i> A school is a place where children learn the basics they need to know for building the future. It is important for kids, not only for studying purposes but for the improvement of their learning ability.</h6>
+            <h6 class="child5"><i class=" fa-solid fa-circle-chevron-right"></i> Education is the only way by which a desired change and upliftment in society can be achieved.</h6>
+            <a href="#"><button class="btnchild btn1child">More Details</button></a> 
+        </div>
+        <br>
+        
+    </div>
+    <br>
+    <div class="educ">
+        <h1 class="ed"><em>"Education must not simply teach work</em></h1>
+        <h1 class="ed">-it must teach Life."</em></h1>
+        <a href="https://en.wikipedia.org/wiki/W._E._B._Du_Bois"><h4 class="historian">W. E. B. Du Bois</h4></a>
+    </div>
+
+    <div class="Finding">
+        <div class="help">
+            <h6 class="Help">Let Us Help</h6>
+            <h2 class"Finding">Finding Your Right Courses</h2>
+            <a href="#"><button class="btnFinding btn1Finding">Get Started</button></a> 
+        </div>
+
+    </div
+   
+    <br>
+
+</div>
+
+
+{%endblock%}
